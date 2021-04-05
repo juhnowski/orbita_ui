@@ -1,0 +1,241 @@
+local ui = require("tek.ui")
+
+--MENU
+local PPM_map = ui.loadImage(ui.ProgDir ..  "/graphics/imageFile/MainScreen/map.ppm")
+local PPM_info_table = ui.loadImage(ui.ProgDir ..  "/graphics/imageFile/MainScreen/info_table.ppm")
+local PPM_reset_route = ui.loadImage(ui.ProgDir ..  "/graphics/imageFile/MainScreen/btn_sbros_poezdki.ppm")
+local PPM_reset_consump = ui.loadImage(ui.ProgDir ..  "/graphics/imageFile/MainScreen/btn_sbros_rashoda.ppm")
+
+local MainScreen = ui.Group:new
+{
+        Children =
+        {
+		ui.Group:new
+                {
+			Style = "background-image: url(graphics/imageFile/Background/background2.ppm)";
+                        Orientation = "vertical",
+                        Width = "free",
+                        Children =
+                        {
+                                --[[ui.Button:new
+                                {
+                                        Text = "Alignment left",
+                                        Width = "auto",
+                                        MaxHeight = "none",
+                                        HAlign = "left"
+                                },
+                                ui.Button:new
+                                {
+                                        Text = "Alignment center",
+                                        Width = "auto",
+                                        MaxHeight = "none",
+                                        HAlign = "center"
+                                },]]
+				ui.Group:new
+				{
+					--Style = "background-image: url(graphics/imageFile/Background/background2.ppm)";
+					EraseBG = false;
+					Orientation = "horizontal";
+					Width = "free";
+					Children =
+					{
+						ui.Text:new
+						{
+							Text = "MAP";
+							Width = "free";
+		                                        MaxHeight = "none";
+							Mode = "inert";
+							Weight = 0x9000;
+							Style =  "font: ui-huge:20";	
+						};
+						ui.Group:new
+						{
+							Orientation = "vertical";
+							--EraseBG = false;
+							Style = "background-image: url(graphics/imageFile/Background/background2.ppm)";
+							Children =
+							{
+								ui.Text:new
+								{
+									Text = "Индикаторы";
+                	                                        	Width = "auto"; 
+	                        	                                MaxHeight = "none";
+									Weight = 0x400;
+									HAlign = "right";
+									Mode = "inert";
+								};
+								ui.Group:new
+                                                                {
+									--Style = "background-image: url(graphics/imageFile/Background/background2.ppm)";
+									Style = "background-color: white";
+			                                                --Id = "the-canvas",
+                                                                        --Text = "Second1";
+									Height = "free";
+                                                                        Width = "free";
+									Orientation = "vertical";
+									Children =
+									{
+										ui.Text:new
+										{
+											Style = "background-color: white; color: #006080; font: ui-huge:20; border-width: 0";
+											Text = "Состояние оборудования:";
+										};
+										ui.Group:new
+										{
+										};
+										ui.Text:new
+                                                                                {
+											Style = "background-color: white; color: #006080; font: ui-huge:20; border-width: 0; text-align: left";
+                                                                                        Text = "Ошибка:";
+                                                                                };
+										ui.Group:new
+										{
+											Orientation = "vertical";
+											Style = "background-color:white";
+											Children =
+											{
+												ui.Text:new
+		                                                                                {
+													Style = "background-color: white; color: #006080; font: ui-huge:20; border-width: 0; text-align: left";
+                		                                                                        Text = "Маршрут №:";
+													HAlign = "left";
+                                		                                                };
+												ui.Text:new
+                                                                                                {
+													Style = "background-color: white; color: #006080; font: ui-huge:20; border-width: 0; text-align: left";
+                                                                                                        Text = "Остановка:";
+													HAlign = "left";
+                                                                                                };
+												ui.Text:new
+                                                                                                {
+													Style = "background-color: white; color: #006080; font: ui-huge:20; border-width: 0; text-align: left";
+                                                                                                        Text = "Следующая остановка:";
+													HAlign = "left";
+                                                                                                };
+											}
+										}
+									}
+                                };
+							}
+						}
+					}
+				},
+				ui.Group:new
+                {
+					--Style = "background-image: url(graphics/imageFile/Background/background2.ppm)";
+					EraseBG = false;
+					Orientation = "horizontal";
+					Width = "free";
+                    Children = 
+                    {
+						ui.Group:new
+						{
+							EraseBG = false;
+							Orientation = "vertical";
+							Height = "free";
+							Children =
+							{
+								ui.Group:new
+								{
+									Style = "background-color: white";
+									Oriantation = "horizontal";
+									Children =
+									{
+										ui.Text:new
+										{
+											Style = "background-color: white; color: #006080; font: ui-huge:20; border-width: 0; text-align: legn: left";
+											Text = "Средний расход";
+										};
+										ui.Text:new
+                                        {
+                                            Style = "background-color: white; color: #006080; font: ui-huge:20; border-width: 0; text-align: legn: left";
+                                            Text = "20";
+                                        };
+										ui.Text:new
+                                        {
+                                            Style = "background-color: white; color: #006080; font: ui-huge:20; border-width: 0; text-align: legn: left";
+                                            Text = "л/100км";
+                                        };
+									}
+								};
+								ui.Group:new
+                                {
+                                	Style = "background-color: white";
+                                    Oriantation = "horizontal";
+                                    Children =
+                                    {
+                                        ui.Text:new
+                                        {
+                                            Style = "background-color: white; color: #006080; font: ui-huge:20; border-width: 0; text-align: legn: left";
+                                            Text = "Запас хода";
+                                        };
+                                        ui.Text:new
+                                        {
+                                            Style = "background-color: white; color: #006080; font: ui-huge:20; border-width: 0; text-align: legn: left";
+                                            Text = "70";
+                                        };
+                                        ui.Text:new
+                                        {
+                                            Style = "background-color: white; color: #006080; font: ui-huge:20; border-width: 0; text-align: legn: left";
+                                            Text = "км";
+                                        };
+                                    }
+                                };
+								ui.Group:new
+                                {
+                                	Style = "background-color: white";
+                                    Oriantation = "horizontal";
+                                    Children =
+                                    {
+                                        ui.Text:new
+                                        {
+                                            Style = "background-color: white; color: #006080; font: ui-huge:20; border-width: 0; text-align: legn: left";
+                                            Text = "Одометр";
+                                        };
+                                        ui.Text:new
+                                        {
+                                            Style = "background-color: white; color: #006080; font: ui-huge:20; border-width: 0; text-align: legn: left";
+                                            Text = "150000";
+                                        };
+                                        ui.Text:new
+                                        {
+                                            Style = "background-color: white; color: #006080; font: ui-huge:20; border-width: 0; text-align: legn: left";
+                                            Text = "км";
+                                        };
+                                    }
+                                };
+								ui.Group:new
+								{
+									Style = "background-color: white";
+									Oriantation = "horizontal";
+                                    Children =
+                                    {
+										ui.Button:new
+										{
+											Style = "color: black; font: ui-huge:20; background-color: white";
+											Text = "Сброс расхода";
+										};
+										ui.Button:new
+                                        {
+											Style = "color: black; font: ui-huge:20; background-color: white";
+											Text = "Сброс поездки";
+                                        }
+									}
+								}
+							}
+						};
+                        ui.Button:new
+                        {
+                        	
+							--[[Text = "Firth";
+                            Width = "free"; 
+                            MaxHeight = "none";--]]
+                        }
+                    }
+                },
+			}
+		}
+	}
+}
+
+return MainScreen;

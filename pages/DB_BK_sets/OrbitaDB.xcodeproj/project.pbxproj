@@ -1,0 +1,96 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		011DB9041D7FFFE60078A51B /* orbita_hdd.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = orbita_hdd.lua; sourceTree = "<group>"; };
+		011DB9051D80054C0078A51B /* orbita_rs485.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = orbita_rs485.lua; sourceTree = "<group>"; };
+		011DB9061D800B030078A51B /* orbita_rs232.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = orbita_rs232.lua; sourceTree = "<group>"; };
+		011DB9071D800C920078A51B /* orbita_can.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = orbita_can.lua; sourceTree = "<group>"; };
+		011DB9081D800E0D0078A51B /* orbita_auth.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = orbita_auth.lua; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.lua; };
+		0143C6E31D802F980090A7FD /* test.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.lua; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.lua; };
+		01E01C301D7FC3B7002F704A /* orbita_settings.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = orbita_settings.lua; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.lua; };
+		01E01C311D7FCBA2002F704A /* orbita_ip.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = orbita_ip.lua; sourceTree = "<group>"; };
+		01E01C321D7FCDFE002F704A /* orbita_ip_cams.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = orbita_ip_cams.lua; sourceTree = "<group>"; };
+		01E01C331D7FCF5A002F704A /* orbita_ip_bc.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = orbita_ip_bc.lua; sourceTree = "<group>"; };
+		01E01C341D7FD4BC002F704A /* orbita_dhcp_bc.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = orbita_dhcp_bc.lua; sourceTree = "<group>"; };
+		01E01C351D7FE10D002F704A /* orbita_gosnumber.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = orbita_gosnumber.lua; sourceTree = "<group>"; };
+		01E01C361D7FE36F002F704A /* orbita_date_time.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = orbita_date_time.lua; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		01E01C291D7FC38E002F704A = {
+			isa = PBXGroup;
+			children = (
+				0143C6E31D802F980090A7FD /* test.lua */,
+				011DB9081D800E0D0078A51B /* orbita_auth.lua */,
+				011DB9071D800C920078A51B /* orbita_can.lua */,
+				011DB9061D800B030078A51B /* orbita_rs232.lua */,
+				011DB9051D80054C0078A51B /* orbita_rs485.lua */,
+				011DB9041D7FFFE60078A51B /* orbita_hdd.lua */,
+				01E01C361D7FE36F002F704A /* orbita_date_time.lua */,
+				01E01C351D7FE10D002F704A /* orbita_gosnumber.lua */,
+				01E01C341D7FD4BC002F704A /* orbita_dhcp_bc.lua */,
+				01E01C331D7FCF5A002F704A /* orbita_ip_bc.lua */,
+				01E01C311D7FCBA2002F704A /* orbita_ip.lua */,
+				01E01C301D7FC3B7002F704A /* orbita_settings.lua */,
+				01E01C321D7FCDFE002F704A /* orbita_ip_cams.lua */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		01E01C2A1D7FC38F002F704A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+			};
+			buildConfigurationList = 01E01C2D1D7FC38F002F704A /* Build configuration list for PBXProject "OrbitaDB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 01E01C291D7FC38E002F704A;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		01E01C2E1D7FC38F002F704A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		01E01C2F1D7FC38F002F704A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01E01C2D1D7FC38F002F704A /* Build configuration list for PBXProject "OrbitaDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01E01C2E1D7FC38F002F704A /* Debug */,
+				01E01C2F1D7FC38F002F704A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01E01C2A1D7FC38F002F704A /* Project object */;
+}
